@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import Collapsible from 'react-collapsible';
-
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 
 export const Person = (props) => {
   const { name, surname, mail, faculty, img, info, interests } = props;
-  console.log(img)
+  const [accrodionOpen, setAccordionOpen] = useState(false)
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       {/* <img className="w-full h-60" src={img} alt={`${name} ${surname}`} /> */}
@@ -27,10 +27,11 @@ export const Person = (props) => {
           })}
         </div>
       </div>
-      <div className="px-6 py-4 text-sm">
+      <div className="px-6 py-4 ">
        <Collapsible trigger={
-        <div className="mb-3">
+        <div  onClick={() => setAccordionOpen(!accrodionOpen)} className="mb-3 flex justify-between">
           Show More
+          {accrodionOpen ? <AiOutlineMinusCircle/> : <AiOutlinePlusCircle/>  } 
         </div>
        }>
           <p>{info}</p>
