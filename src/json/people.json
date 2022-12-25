@@ -15,7 +15,7 @@
     "surname": "Alizade",
     "mail": "ralizade15723@ada.edu.az",
     "faculty": "Information Technology",
-    "info": "I am a second year student at ADA university, also I am a fullstack web and web3 developer",
+    "info": "I am a second year student at ADA university, also I am a fullstack web and web3 developer. I worked at the American Web3 company Remox for 8 months, my job was to connect all EVM-based cryptocurrencies to the application.",
     "img": "/images/Rijat.jpeg",
     "interests": ["Football", "Swimming", "Videogames"]
   },
@@ -25,7 +25,7 @@
     "surname": "Yusifli",
     "mail": "eyusifli8011@ada.edu.az",
     "faculty": "Computer Science",
-    "info": "I am Elshan Yusifli and 21 years old. I did my Internship in Ministry of Economy based on Front End. My favorite programming language is Java. I love solving problems in LeetCode.com.",
+    "info": "I did my Internship in Ministry of Economy based on Front End. My favorite programming language is Java. I love solving problems in LeetCode.com.",
     "img": "/images/Elshan.jpeg",
     "interests": ["Hobby", "Gaming", "Reading"]
   }

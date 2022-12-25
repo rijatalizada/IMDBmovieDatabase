@@ -30,7 +30,7 @@ export const Person = (props) => {
       <div className="px-6 py-4 ">
        <Collapsible trigger={
         <div  onClick={() => setAccordionOpen(!accrodionOpen)} className="mb-3 flex justify-between">
-          Show More
+          Show {accrodionOpen ? "Less" : "More"}
           {accrodionOpen ? <AiOutlineMinusCircle/> : <AiOutlinePlusCircle/>  } 
         </div>
        }>
