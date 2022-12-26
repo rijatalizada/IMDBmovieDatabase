@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './Pages/Home'
 import Movies from './Pages/Movies';
 import Movie from './Pages/Movie'
-import ContactUs from './Pages/ContactUs';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/movies' element={<Movies/>} />
           <Route path='/movie/:id' element={<Movie/>}/>
-          <Route path='/contact' element={<ContactUs/>}/>
+          <Route path='/contact' element={<ContactPage/>}/>
         </Routes>
       </Router>
     </div>
