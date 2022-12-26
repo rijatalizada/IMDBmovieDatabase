@@ -7,6 +7,8 @@
     "faculty": "Information Technology",
     "info": "I attend the faculty of the school of it and engineering (SITE) as an ADA student. I'm currently working to increase my knowledge on various programming languages before settling on one and beginning to master it.",
     "img": "/images/Elnur.jpeg",
+    "githubUsername": "Elnur1111",
+    "github": "https://github.com/Elnur1111",
     "interests": ["Swimming", "Traveling", "Basketball", "Archery"]
   },
   {
@@ -17,6 +19,8 @@
     "faculty": "Information Technology",
     "info": "I am a second year student at ADA university, also I am a fullstack web and web3 developer. I worked at the American Web3 company Remox for 8 months, my job was to connect all EVM-based cryptocurrencies to the application.",
     "img": "/images/Rijat.jpeg",
+    "github": "https://github.com/rijatalizada",
+    "githubUsername": "rijatalizada",
     "interests": ["Football", "Swimming", "Videogames"]
   },
   {
@@ -27,6 +31,8 @@
     "faculty": "Computer Science",
     "info": "I did my Internship in Ministry of Economy based on Front End. My favorite programming language is Java. I love solving problems in LeetCode.com.",
     "img": "/images/Elshan.jpeg",
+    "githubUsername": "elo-319",
+    "github": "https://github.com/elo-319",
     "interests": ["Hobby", "Gaming", "Reading"]
   }
 ]

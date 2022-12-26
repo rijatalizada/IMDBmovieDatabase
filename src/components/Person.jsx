@@ -3,7 +3,7 @@ import Collapsible from 'react-collapsible';
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 
 export const Person = (props) => {
-  const { name, surname, mail, faculty, img, info, interests } = props;
+  const { name, surname, mail, faculty, img, info, interests, github, githubUsername } = props;
   const [accrodionOpen, setAccordionOpen] = useState(false)
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -18,6 +18,7 @@ export const Person = (props) => {
           <br />
           Email: {mail}
           <br />
+          GitHub: <a className="text-[#0000ffb0]" href={github} target="_blank">{githubUsername}</a>
         </p>
       </div>
       <div className="px-6 py-4">

@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Movies from './Pages/Movies';
 import Movie from './Pages/Movie'
 import ContactPage from './Pages/ContactPage';
+import Messages from './Pages/Messages'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/movies' element={<Movies/>} />
           <Route path='/movie/:id' element={<Movie/>}/>
           <Route path='/contact' element={<ContactPage/>}/>
+          <Route path='/messages' element={<Messages/>}/>
         </Routes>
       </Router>
     </div>
