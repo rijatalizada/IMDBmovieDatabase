@@ -19,6 +19,9 @@ function Navbar() {
               <Link className={` p-2 ${pathname === '/movies' ? 'text-[red]' : 'text-white'}`} to="/movies">
                 Movies
               </Link>
+              <Link className={` p-2 ${pathname === '/contact' ? 'text-[red]' : 'text-white'}`} to="/contact">
+                Contact Us
+              </Link>
             </div>
 
         </div>

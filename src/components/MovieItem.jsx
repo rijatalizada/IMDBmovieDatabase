@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const MovieItem = ({Poster_Link, Series_Title, IMDB_Rating, Overview, Genre, Runtime}) => {
+const MovieItem = ({id, Poster_Link, Series_Title, IMDB_Rating, Overview, Genre, Runtime}) => {
   return (
-    <div className="IMDBTopList cursor-pointer">
+    <Link to={`/movie/${id}`} className="IMDBTopList cursor-pointer">
       <div className="IMDBTopList-item flex flex-col items-center p-4 bg-white rounded-lg shadow-md">
         <img src={Poster_Link} alt="Movie poster" className="" />
         <h2 title={Series_Title} className="text-2xl font-bold mt-4 text-center cursor-text">{Series_Title.length > 15 ? `${Series_Title.slice(0, 15)}...` : Series_Title}</h2>
@@ -20,7 +21,7 @@ const MovieItem = ({Poster_Link, Series_Title, IMDB_Rating, Overview, Genre, Run
         </div>
         <p className="mt-4 text-gray-700 text-base leading-relaxed">{Overview.slice(0,50)}... <span className='text-[red] text-sm'>Read More</span></p>
       </div>
-    </div>
+    </Link>
   );
 };
 
