@@ -5,12 +5,15 @@ import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 export const Person = (props) => {
   const { name, surname, mail, faculty, img, info, interests, github, githubUsername } = props;
   const [accrodionOpen, setAccordionOpen] = useState(false)
+  console.log(img)
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      {/* <img className="w-full h-60" src={img} alt={`${name} ${surname}`} /> */}
-      <div style={{
+      {/* <img className="w-full h-60" src={'/IMDBmovieDatabase/images/Elnur.jpeg'} alt={`${name} ${surname}`} /> */}
+      <div
+       style={{
         backgroundImage: `url(${img})`
-      }} className={`w-full h-96 bg-cover bg-center`}></div>
+      }}
+       className={`w-full h-96 bg-cover bg-center`}></div>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{`${name} ${surname}`}</div>
         <p className="text-gray-700 text-base">

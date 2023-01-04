@@ -11,7 +11,7 @@ const Messages = () => {
   }
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto pb-6'>
       {data.map((message) => {
         return <MessageItem key={message.id} {...message}/>
       })}
