@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/IMDBmovieDatabase/static/css/main.1a1fda16.css",
-    "main.js": "/IMDBmovieDatabase/static/js/main.09b1d707.js",
+    "main.css": "/IMDBmovieDatabase/static/css/main.8484ead6.css",
+    "main.js": "/IMDBmovieDatabase/static/js/main.1189a387.js",
     "index.html": "/IMDBmovieDatabase/index.html",
-    "main.1a1fda16.css.map": "/IMDBmovieDatabase/static/css/main.1a1fda16.css.map",
-    "main.09b1d707.js.map": "/IMDBmovieDatabase/static/js/main.09b1d707.js.map"
+    "main.8484ead6.css.map": "/IMDBmovieDatabase/static/css/main.8484ead6.css.map",
+    "main.1189a387.js.map": "/IMDBmovieDatabase/static/js/main.1189a387.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a1fda16.css",
-    "static/js/main.09b1d707.js"
+    "static/css/main.8484ead6.css",
+    "static/js/main.1189a387.js"
   ]
 }
