@@ -3,7 +3,7 @@ import Collapsible from 'react-collapsible';
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 
 export const Person = (props) => {
-  const { name, surname, mail, faculty, img, info, interests, github, githubUsername } = props;
+  const { name, surname, mail, faculty, img, info, interests, github, githubUsername, projects } = props;
   const [accrodionOpen, setAccordionOpen] = useState(false)
   console.log(img)
   return (
@@ -38,7 +38,15 @@ export const Person = (props) => {
           {accrodionOpen ? <AiOutlineMinusCircle/> : <AiOutlinePlusCircle/>  } 
         </div>
        }>
-          <p>{info}</p>
+          <div>{info}</div>
+          <p className="mt-4 font-bold">
+            Projects:
+          </p>
+          <div className="mt-2 gap-2">
+            {projects.map((project) => {
+              return <a className="text-[#0000ffb0] text-sm block" href={project.link} target="_blank">{project.name}</a>
+            })}
+          </div>
        </Collapsible>
       </div>
     </div>
