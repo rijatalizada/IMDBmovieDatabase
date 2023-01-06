@@ -1,11 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import {BsStarFill, BsStarHalf} from 'react-icons/bs'
+import { AiFillBackward} from 'react-icons/ai'
 
 const Movie = () => {
     const {id} = useParams()
     const {data, loading, error} = useFetch(`http://localhost:3001/movies/${id}`)
+    const navigaete = useNavigate()
 
     if(loading) {
         return <div>Loading...</div>
@@ -15,6 +17,7 @@ const Movie = () => {
 
     return (
       <div className="container mx-auto py-10">
+        <button onClick={() => navigaete(-1) } className='mb-2 flex items-center gap-1'><AiFillBackward className='text-xl'/> Back</button>
       <div className="flex items-center justify-between mb-10">
         <h1 className="text-4xl font-bold">{data.Series_Title} <span className='text-sm'>({data.Certificate})</span> </h1>
         <div className="flex flex-col items-end ">
